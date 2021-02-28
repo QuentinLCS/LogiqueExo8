@@ -60,7 +60,7 @@ void colorierLeGraphe(int nbSommets) {
 
         if (fichier != NULL)
         {
-            printf("\n---------  RESULTATS  ---------\n\n");
+            printf("--------------  COLORATION POSSIBLE  --------------\n\n");
             for (int sommetNum = 1; sommetNum <= nbSommets; sommetNum++) {
                 for (int colorNum= 0; colorNum < 3; colorNum++)
                 {

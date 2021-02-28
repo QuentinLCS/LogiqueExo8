@@ -24,6 +24,8 @@
  */
 void afficherAretes(int size, ARETE* tableau) {
 
+    printf("------------------  ARETES LUES  ------------------\n\n");
+
     for (int i = 0; i < size; i++)
     {
     
@@ -104,18 +106,15 @@ void afficherAretesDimacs(int nbSommets, int nbAretes, ARETE* tableau) {
         }
 
         if (save) sauvegarderDansUnFichier(resultat);
-        else printf("%s", resultat);
+        else printf("%s\n\n", resultat);
     }
-    
-
-    printf("\n----------------------  FIN  ----------------------\n\n");
 
 }
 
 /**
  * @brief Affiche les erreurs en fonction de l'entier donné en paramètre.
  * 
- * @param valeur Code d'erreur. ( 1 ou 2 )
+ * @param valeur Code d'erreur. ( 1 / 2 / 3 / 4 ou 5 )
  */ 
 void erreurFonctionnelle(int valeur) {
 
@@ -140,10 +139,10 @@ void erreurFonctionnelle(int valeur) {
         break;
 
     case 5:
+        strcat(erreur, "Lecture du solver impossible. \nERREUR : Vérifiez que le fichier .\"/solver/result.aig\" existe et que les droits requis sont définis.");
         break;
 
     default:
-        strcat(erreur, "Lecture du solver impossible. \nERREUR : Vérifiez que le fichier .\"/solver/result.aig\" existe et que les droits requis sont définis.");
         break;
     }
 
