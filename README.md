@@ -1,13 +1,14 @@
 # LogiqueExo8
 
-## Exercice réalisé dans le cadre d'un cours de Logique en 2nd Semestre à l'ENSIIE !
+## Exercice réalisé dans le cadre d'un cours de Logique en 2nd Semestre à l'ENSIIE ! Cf. fin du README pour lire le sujet.
+
 [<img src="https://www.ensiie.fr/wp-content/uploads/2018/04/ENSIIE01.png" alt="drawing" width="100"/>](https://www.ensiie.fr/)
 
 
 
 ## Utilisation
 
-> Le a été conçu sous **Ubuntu 20.04.1 LTS**. 
+> Le programme a été conçu sous **Ubuntu 20.04.1 LTS**. 
 
 1. Clonez le dépot en local.
 2. Entrez dans le dossier cloné.
@@ -80,3 +81,8 @@ p cnf 12 31
 SAT - LE GRAPHE EST COLORIABLE EN 3 COULEURS !
 
 ```
+
+# Annexe
+
+## Le sujet
+[<img src="https://i.gyazo.com/d23906eeac8d44f810e0b9204b7291cc.png" alt="drawing"/>](https://i.gyazo.com/d23906eeac8d44f810e0b9204b7291cc.png)
