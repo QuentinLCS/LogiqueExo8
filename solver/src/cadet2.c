@@ -825,10 +825,8 @@ cadet_res c2_solve_qdimacs(const char* file_name, Options* options) {
     if (!options) {options = default_options();}
     FILE* file = NULL;
     if (file_name == NULL) {
-        V0("Reading from stdin\n");
         file = stdin;
     } else {
-        V0("Processing file \"%s\".\n", file_name);
         file = open_possibly_zipped_file(file_name);
     }
     C2* c2 = c2_from_file(file, options);
@@ -865,7 +863,6 @@ cadet_res c2_solve_qdimacs(const char* file_name, Options* options) {
             V0("UNKNOWN\n");
             break;
         case CADET_RESULT_SAT:
-            V0("SAT\n");
             if (log_qdimacs_compliant) {
                 printf("s cnf 1\n");
             }
@@ -874,7 +871,6 @@ cadet_res c2_solve_qdimacs(const char* file_name, Options* options) {
             }
             break;
         case CADET_RESULT_UNSAT:
-            V0("UNSAT\n");
             assert(c2->state == C2_UNSAT);
             abortif(c2->options->functional_synthesis,
                     "Should not reach UNSAT output in functional synthesis mode.");
