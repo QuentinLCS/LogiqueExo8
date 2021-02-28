@@ -75,15 +75,21 @@ $(function() {
 <p>Fichier contenant toutes les fonctions liées à l'affichage de données.  
 <a href="#details">Plus de détails...</a></p>
 <div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="struct_8h_source.html">../include/struct.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="coloriage_8h_source.html">../include/coloriage.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Graphe des dépendances par inclusion de affichage.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="affichage_8c__incl.png" border="0" usemap="#src_2affichage_8c" alt=""/></div>
 <map name="src_2affichage_8c" id="src_2affichage_8c">
-<area shape="rect" title="Fichier contenant toutes les fonctions liées à l&#39;affichage de données." alt="" coords="43,5,159,32"/>
+<area shape="rect" title="Fichier contenant toutes les fonctions liées à l&#39;affichage de données." alt="" coords="169,5,285,32"/>
 <area shape="rect" title=" " alt="" coords="5,80,72,107"/>
-<area shape="rect" href="struct_8h.html" title="Header contenant les structures nécessaires au programme." alt="" coords="97,80,231,107"/>
+<area shape="rect" title=" " alt="" coords="97,80,167,107"/>
+<area shape="rect" title=" " alt="" coords="191,80,262,107"/>
+<area shape="rect" href="struct_8h.html" title="Header contenant les structures nécessaires au programme." alt="" coords="290,155,425,181"/>
+<area shape="rect" href="coloriage_8h.html" title="Header contenant les fonctions nécessaires au coloriage du graphe." alt="" coords="337,80,495,107"/>
 </map>
 </div>
 </div><table class="memberdecls">
@@ -92,6 +98,12 @@ Fonctions</h2></td></tr>
 <tr class="memitem:a4dfce3c2670596bdff9a8a9ab28c8567"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="affichage_8c.html#a4dfce3c2670596bdff9a8a9ab28c8567">afficherAretes</a> (int size, <a class="el" href="structARETE.html">ARETE</a> *tableau)</td></tr>
 <tr class="memdesc:a4dfce3c2670596bdff9a8a9ab28c8567"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affiche un tableau d'ARETES.  <a href="affichage_8c.html#a4dfce3c2670596bdff9a8a9ab28c8567">Plus de détails...</a><br /></td></tr>
 <tr class="separator:a4dfce3c2670596bdff9a8a9ab28c8567"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4f25d3556f1de7f7271e2b8418396ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="affichage_8c.html#aa4f25d3556f1de7f7271e2b8418396ce">afficherAretesDimacs</a> (int nbSommets, int nbAretes, <a class="el" href="structARETE.html">ARETE</a> *tableau)</td></tr>
+<tr class="memdesc:aa4f25d3556f1de7f7271e2b8418396ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affiche le code format DIMACS du graphe.  <a href="affichage_8c.html#aa4f25d3556f1de7f7271e2b8418396ce">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aa4f25d3556f1de7f7271e2b8418396ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75074b8fff6240effecd4c2510c794b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="affichage_8c.html#a75074b8fff6240effecd4c2510c794b2">erreurFonctionnelle</a> (int valeur)</td></tr>
+<tr class="memdesc:a75074b8fff6240effecd4c2510c794b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affiche les erreurs en fonction de l'entier donné en paramètre.  <a href="affichage_8c.html#a75074b8fff6240effecd4c2510c794b2">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a75074b8fff6240effecd4c2510c794b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
 <div class="textblock"><p>Fichier contenant toutes les fonctions liées à l'affichage de données. </p>
@@ -129,8 +141,78 @@ Fonctions</h2></td></tr>
 <p>Affiche un tableau d'ARETES. </p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramname">sizeA</td><td>Taille de la première dimension du tableau </td></tr>
+    <tr><td class="paramname">size</td><td>Taille de la première dimension du tableau </td></tr>
     <tr><td class="paramname">tableau</td><td>tableau à afficher. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa4f25d3556f1de7f7271e2b8418396ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4f25d3556f1de7f7271e2b8418396ce">&#9670;&nbsp;</a></span>afficherAretesDimacs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void afficherAretesDimacs </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nbSommets</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nbAretes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structARETE.html">ARETE</a> *&#160;</td>
+          <td class="paramname"><em>tableau</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Affiche le code format DIMACS du graphe. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nbSommets</td><td>Nombre de sommets du graphe. </td></tr>
+    <tr><td class="paramname">nbAretes</td><td>Nombre d'aretes du graphe. </td></tr>
+    <tr><td class="paramname">tableau</td><td>Tableau d'aretes du graphe. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a75074b8fff6240effecd4c2510c794b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75074b8fff6240effecd4c2510c794b2">&#9670;&nbsp;</a></span>erreurFonctionnelle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void erreurFonctionnelle </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>valeur</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Affiche les erreurs en fonction de l'entier donné en paramètre. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">valeur</td><td>Code d'erreur. ( 1 / 2 / 3 / 4 ou 5 ) </td></tr>
   </table>
   </dd>
 </dl>

@@ -267,8 +267,7 @@ int main(int argc, const char* argv[]) {
     if (log_qdimacs_compliant && debug_verbosity > VERBOSITY_LOW) {
         LOG_WARNING("Verbosity is medium or higher and comment prefix is set. May result in cluttered log.");
     }
-    
-    V0("CADET %s\n", VERSION);
+
     
     options_print(options);
     
