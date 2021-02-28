@@ -1,0 +1,82 @@
+\hypertarget{interface_8h}{}\doxysection{Référence du fichier include/interface.h}
+\label{interface_8h}\index{include/interface.h@{include/interface.h}}
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{interface_8h_aa299530428cd5db01dbfa15a2ed33ce2}{taille\+\_\+nouvelle\+\_\+carte}} ()
+\item 
+void \mbox{\hyperlink{interface_8h_a77c3837bf425715ece447829d3b5c853}{affiche\+\_\+carte}} (int $\ast$)
+\item 
+void \mbox{\hyperlink{interface_8h_a423ae39764a7a38269264fb25da4368f}{action\+\_\+joueur}} ()
+\item 
+struct machine \mbox{\hyperlink{interface_8h_af4930cc4836e96166179f2e2886de8fc}{informations\+\_\+ajout\+\_\+machine}} ()
+\item 
+struct machine \mbox{\hyperlink{interface_8h_a5cbf2aa7e06751823b4c74accafcea84}{informations\+\_\+maj\+\_\+machine}} ()
+\item 
+struct personnel \mbox{\hyperlink{interface_8h_a987d559d3e5151546e8b8486149113d8}{informations\+\_\+achat\+\_\+personnel}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyAuthor}{Auteur}
+Céline Laguillon 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+26 février 2021
+\end{DoxyDate}
+Interface en charge de tous les échanges entre le joueur humain et le jeu \+: affichage et prise de décision du joueur. 
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{interface_8h_a423ae39764a7a38269264fb25da4368f}\label{interface_8h_a423ae39764a7a38269264fb25da4368f}} 
+\index{interface.h@{interface.h}!action\_joueur@{action\_joueur}}
+\index{action\_joueur@{action\_joueur}!interface.h@{interface.h}}
+\doxysubsubsection{\texorpdfstring{action\_joueur()}{action\_joueur()}}
+{\footnotesize\ttfamily void action\+\_\+joueur (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Demande une action au joueur \+: quitter le jeu, passer au tour suivant, ajouter une machine, etc. \mbox{\Hypertarget{interface_8h_a77c3837bf425715ece447829d3b5c853}\label{interface_8h_a77c3837bf425715ece447829d3b5c853}} 
+\index{interface.h@{interface.h}!affiche\_carte@{affiche\_carte}}
+\index{affiche\_carte@{affiche\_carte}!interface.h@{interface.h}}
+\doxysubsubsection{\texorpdfstring{affiche\_carte()}{affiche\_carte()}}
+{\footnotesize\ttfamily void affiche\+\_\+carte (\begin{DoxyParamCaption}\item[{int $\ast$}]{ }\end{DoxyParamCaption})}
+
+Affiche la carte. 
+\begin{DoxyParams}{Paramètres}
+{\em un} & tableau à double entrées pour les cases \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_8h_a987d559d3e5151546e8b8486149113d8}\label{interface_8h_a987d559d3e5151546e8b8486149113d8}} 
+\index{interface.h@{interface.h}!informations\_achat\_personnel@{informations\_achat\_personnel}}
+\index{informations\_achat\_personnel@{informations\_achat\_personnel}!interface.h@{interface.h}}
+\doxysubsubsection{\texorpdfstring{informations\_achat\_personnel()}{informations\_achat\_personnel()}}
+{\footnotesize\ttfamily struct personnel informations\+\_\+achat\+\_\+personnel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Demande au joueur les informations nécessaires à la sélection d\textquotesingle{}un membre du personnel pour l\textquotesingle{}achat. \begin{DoxyReturn}{Renvoie}
+un objet de type personnel 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_8h_af4930cc4836e96166179f2e2886de8fc}\label{interface_8h_af4930cc4836e96166179f2e2886de8fc}} 
+\index{interface.h@{interface.h}!informations\_ajout\_machine@{informations\_ajout\_machine}}
+\index{informations\_ajout\_machine@{informations\_ajout\_machine}!interface.h@{interface.h}}
+\doxysubsubsection{\texorpdfstring{informations\_ajout\_machine()}{informations\_ajout\_machine()}}
+{\footnotesize\ttfamily struct machine informations\+\_\+ajout\+\_\+machine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Demande au joueur les informations nécessaire à l\textquotesingle{}ajout d\textquotesingle{}une nouvelle machine à la carte. \begin{DoxyReturn}{Renvoie}
+un objet de type machine 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_8h_a5cbf2aa7e06751823b4c74accafcea84}\label{interface_8h_a5cbf2aa7e06751823b4c74accafcea84}} 
+\index{interface.h@{interface.h}!informations\_maj\_machine@{informations\_maj\_machine}}
+\index{informations\_maj\_machine@{informations\_maj\_machine}!interface.h@{interface.h}}
+\doxysubsubsection{\texorpdfstring{informations\_maj\_machine()}{informations\_maj\_machine()}}
+{\footnotesize\ttfamily struct machine informations\+\_\+maj\+\_\+machine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Demande au joueur les informations nécessaires à la sélection d\textquotesingle{}une machine sur la carte (pour une amélioration ou une destruction). \begin{DoxyReturn}{Renvoie}
+un objet de type machine 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_8h_aa299530428cd5db01dbfa15a2ed33ce2}\label{interface_8h_aa299530428cd5db01dbfa15a2ed33ce2}} 
+\index{interface.h@{interface.h}!taille\_nouvelle\_carte@{taille\_nouvelle\_carte}}
+\index{taille\_nouvelle\_carte@{taille\_nouvelle\_carte}!interface.h@{interface.h}}
+\doxysubsubsection{\texorpdfstring{taille\_nouvelle\_carte()}{taille\_nouvelle\_carte()}}
+{\footnotesize\ttfamily int taille\+\_\+nouvelle\+\_\+carte (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Demande la taille de la nouvelle carte. \begin{DoxyReturn}{Renvoie}
+Taille de la carte choisie par le joueur \+: 10, 20 ou 30. 
+\end{DoxyReturn}
