@@ -13,6 +13,7 @@
 #include<stdlib.h>
 #include "../include/struct.h"
 #include "../include/affichage.h"
+#include "../include/coloriage.h"
 
 /**
  * @brief Fonction principale du programme.
@@ -46,6 +47,8 @@ int main(int argc, char const *argv[])
             afficherAretes(nbAretes, aretes);
 
             afficherAretesDimacs(nbSommets, nbAretes, aretes);
+
+            colorierLeGraphe(nbSommets);
 
         } else {
             erreurFonctionnelle(2);
