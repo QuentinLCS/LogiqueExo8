@@ -16,7 +16,7 @@
 
     void afficherAretes(int , ARETE* );
 
-    void afficherAretesDimacs(int , ARETE* );
+    void afficherAretesDimacs(int, int , ARETE* );
 
     void erreurFonctionnelle(int);
 

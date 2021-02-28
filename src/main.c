@@ -44,6 +44,9 @@ int main(int argc, char const *argv[])
             }
             
             afficherAretes(nbAretes, aretes);
+
+            afficherAretesDimacs(nbSommets, nbAretes, aretes);
+
         } else {
             erreurFonctionnelle(2);
         }

@@ -14,7 +14,6 @@
 
     typedef enum 
     {
-        JAUNE =  'J',
         BLEU = 'J',
         VERT = 'V',
         ROUGE = 'R'
