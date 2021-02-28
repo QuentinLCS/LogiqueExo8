@@ -51,7 +51,7 @@ void colorierLeGraphe(int nbSommets) {
     int curseur = 14, tempInt = 0;
     char couleurs[3] = {ROUGE, VERT, BLEU};
 
-    if (system("./solver/cadet -c result.aig ./saves/last-save.txt")) {
+    if (system("./solver/cadet -c ./solver/result.aig ./saves/last-save.txt")) {
 
         FILE* fichier = NULL;
 
