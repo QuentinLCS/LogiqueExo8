@@ -17,15 +17,18 @@ Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=189pt]{affichage_8h__dep__incl}
+\includegraphics[width=252pt]{affichage_8h__dep__incl}
 \end{center}
 \end{figure}
 \doxysubsection*{Fonctions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{affichage_8h_a403b8dd1ab6e84e51c4d34a68f827844}\label{affichage_8h_a403b8dd1ab6e84e51c4d34a68f827844}} 
-void {\bfseries afficher\+Aretes} (int, int, \mbox{\hyperlink{structARETE}{A\+R\+E\+TE}} $\ast$)
-\end{DoxyCompactItemize}
+void \mbox{\hyperlink{affichage_8h_a264cc6b685c0f38b2d1e46f1fa146fc0}{afficher\+Aretes}} (int, \mbox{\hyperlink{structARETE}{A\+R\+E\+TE}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Affiche un tableau d\textquotesingle{}A\+R\+E\+T\+ES. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{affichage_8h_a6e959ea2a1e5175df8a5a53be989f5e9}{afficher\+Aretes\+Dimacs}} (int, int, \mbox{\hyperlink{structARETE}{A\+R\+E\+TE}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Affiche le code format D\+I\+M\+A\+CS du graphe. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{affichage_8h_a6b1fe758d99bf0ae321cf465f79de38f}{erreur\+Fonctionnelle}} (int)
+\begin{DoxyCompactList}\small\item\em Affiche les erreurs en fonction de l\textquotesingle{}entier donné en paramètre. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Description détaillée}
@@ -43,3 +46,57 @@ Quentin L\+E\+C\+H\+A\+S\+L\+ES (\href{mailto:contact@quentinlcs.fr}{\texttt{ co
 \begin{DoxyCopyright}{Copyright}
 Copyright (c) 2021 
 \end{DoxyCopyright}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{affichage_8h_a264cc6b685c0f38b2d1e46f1fa146fc0}\label{affichage_8h_a264cc6b685c0f38b2d1e46f1fa146fc0}} 
+\index{affichage.h@{affichage.h}!afficherAretes@{afficherAretes}}
+\index{afficherAretes@{afficherAretes}!affichage.h@{affichage.h}}
+\doxysubsubsection{\texorpdfstring{afficherAretes()}{afficherAretes()}}
+{\footnotesize\ttfamily void afficher\+Aretes (\begin{DoxyParamCaption}\item[{int}]{size,  }\item[{\mbox{\hyperlink{structARETE}{A\+R\+E\+TE}} $\ast$}]{tableau }\end{DoxyParamCaption})}
+
+
+
+Affiche un tableau d\textquotesingle{}A\+R\+E\+T\+ES. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em size} & Taille de la première dimension du tableau \\
+\hline
+{\em tableau} & tableau à afficher. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{affichage_8h_a6e959ea2a1e5175df8a5a53be989f5e9}\label{affichage_8h_a6e959ea2a1e5175df8a5a53be989f5e9}} 
+\index{affichage.h@{affichage.h}!afficherAretesDimacs@{afficherAretesDimacs}}
+\index{afficherAretesDimacs@{afficherAretesDimacs}!affichage.h@{affichage.h}}
+\doxysubsubsection{\texorpdfstring{afficherAretesDimacs()}{afficherAretesDimacs()}}
+{\footnotesize\ttfamily void afficher\+Aretes\+Dimacs (\begin{DoxyParamCaption}\item[{int}]{nb\+Sommets,  }\item[{int}]{nb\+Aretes,  }\item[{\mbox{\hyperlink{structARETE}{A\+R\+E\+TE}} $\ast$}]{tableau }\end{DoxyParamCaption})}
+
+
+
+Affiche le code format D\+I\+M\+A\+CS du graphe. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em nb\+Sommets} & Nombre de sommets du graphe. \\
+\hline
+{\em nb\+Aretes} & Nombre d\textquotesingle{}aretes du graphe. \\
+\hline
+{\em tableau} & Tableau d\textquotesingle{}aretes du graphe. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{affichage_8h_a6b1fe758d99bf0ae321cf465f79de38f}\label{affichage_8h_a6b1fe758d99bf0ae321cf465f79de38f}} 
+\index{affichage.h@{affichage.h}!erreurFonctionnelle@{erreurFonctionnelle}}
+\index{erreurFonctionnelle@{erreurFonctionnelle}!affichage.h@{affichage.h}}
+\doxysubsubsection{\texorpdfstring{erreurFonctionnelle()}{erreurFonctionnelle()}}
+{\footnotesize\ttfamily void erreur\+Fonctionnelle (\begin{DoxyParamCaption}\item[{int}]{valeur }\end{DoxyParamCaption})}
+
+
+
+Affiche les erreurs en fonction de l\textquotesingle{}entier donné en paramètre. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em valeur} & Code d\textquotesingle{}erreur. ( 1 / 2 / 3 / 4 ou 5 ) \\
+\hline
+\end{DoxyParams}

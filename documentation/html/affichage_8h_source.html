@@ -75,12 +75,18 @@ $(function() {
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#if !defined(AFFICHAGE_H)</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#define AFFICHAGE_H</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="affichage_8c.html#a4dfce3c2670596bdff9a8a9ab28c8567">afficherAretes</a>(<span class="keywordtype">int</span> , <span class="keywordtype">int</span> , <a class="code" href="structARETE.html">ARETE</a>* );</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="affichage_8h.html#a264cc6b685c0f38b2d1e46f1fa146fc0">afficherAretes</a>(<span class="keywordtype">int</span> , <a class="code" href="structARETE.html">ARETE</a>* );</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#endif // AFFICHAGE_H</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="affichage_8h.html#a6e959ea2a1e5175df8a5a53be989f5e9">afficherAretesDimacs</a>(<span class="keywordtype">int</span>, <span class="keywordtype">int</span> , <a class="code" href="structARETE.html">ARETE</a>* );</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="affichage_8h.html#a6b1fe758d99bf0ae321cf465f79de38f">erreurFonctionnelle</a>(<span class="keywordtype">int</span>);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#endif // AFFICHAGE_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="astructARETE_html"><div class="ttname"><a href="structARETE.html">ARETE</a></div><div class="ttdef"><b>Definition:</b> struct.h:29</div></div>
-<div class="ttc" id="aaffichage_8c_html_a4dfce3c2670596bdff9a8a9ab28c8567"><div class="ttname"><a href="affichage_8c.html#a4dfce3c2670596bdff9a8a9ab28c8567">afficherAretes</a></div><div class="ttdeci">void afficherAretes(int size, ARETE *tableau)</div><div class="ttdoc">Affiche un tableau d'ARETES.</div><div class="ttdef"><b>Definition:</b> affichage.c:21</div></div>
+<div class="ttc" id="aaffichage_8h_html_a264cc6b685c0f38b2d1e46f1fa146fc0"><div class="ttname"><a href="affichage_8h.html#a264cc6b685c0f38b2d1e46f1fa146fc0">afficherAretes</a></div><div class="ttdeci">void afficherAretes(int, ARETE *)</div><div class="ttdoc">Affiche un tableau d'ARETES.</div><div class="ttdef"><b>Definition:</b> affichage.c:25</div></div>
+<div class="ttc" id="astructARETE_html"><div class="ttname"><a href="structARETE.html">ARETE</a></div><div class="ttdef"><b>Definition:</b> struct.h:28</div></div>
+<div class="ttc" id="aaffichage_8h_html_a6b1fe758d99bf0ae321cf465f79de38f"><div class="ttname"><a href="affichage_8h.html#a6b1fe758d99bf0ae321cf465f79de38f">erreurFonctionnelle</a></div><div class="ttdeci">void erreurFonctionnelle(int)</div><div class="ttdoc">Affiche les erreurs en fonction de l'entier donné en paramètre.</div><div class="ttdef"><b>Definition:</b> affichage.c:119</div></div>
+<div class="ttc" id="aaffichage_8h_html_a6e959ea2a1e5175df8a5a53be989f5e9"><div class="ttname"><a href="affichage_8h.html#a6e959ea2a1e5175df8a5a53be989f5e9">afficherAretesDimacs</a></div><div class="ttdeci">void afficherAretesDimacs(int, int, ARETE *)</div><div class="ttdoc">Affiche le code format DIMACS du graphe.</div><div class="ttdef"><b>Definition:</b> affichage.c:46</div></div>
 <div class="ttc" id="astruct_8h_html"><div class="ttname"><a href="struct_8h.html">struct.h</a></div><div class="ttdoc">Header contenant les structures nécessaires au programme.</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
