@@ -14,6 +14,10 @@
 #if !defined(AFFICHAGE_H)
 #define AFFICHAGE_H
 
-    void afficherAretes(int , int , ARETE* );
+    void afficherAretes(int , ARETE* );
+
+    void afficherAretesDimacs(int , ARETE* );
+
+    void erreurFonctionnelle(int);
 
 #endif // AFFICHAGE_H
