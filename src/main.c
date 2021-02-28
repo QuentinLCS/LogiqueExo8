@@ -23,24 +23,36 @@
  */
 int main(int argc, char const *argv[])
 {
-    if (argc >= 5 && argc % 2 != 0) {
 
-        int j = 0;
+    if (argc >= 5 && ( argc % 2 != 0 )) {
+
         int nbSommets = atoi(argv[1]);
         int nbAretes = atoi(argv[2]);
-        ARETE aretes[nbAretes];
-
-        for (int i = 4; i < argc; i+=2)
-        {
-            aretes[j].premierSommet.id = atoi(argv[i]);
-            aretes[j++].secondSommet.id = atoi(argv[i+1]);
-        }
         
-        afficherAretes(nbAretes, 2, aretes);
+        if ( ( (argc-3) / 2 ) == nbAretes ) {
 
+            int j = 0;
+            ARETE aretes[nbAretes];
+
+            for (int i = 0; i < nbAretes; i++)
+            {
+
+                j = 3 + i*2;
+                aretes[i].premierSommet.id = atoi(argv[j]);
+                aretes[i].secondSommet.id = atoi(argv[j+1]);
+            
+            }
+            
+            afficherAretes(nbAretes, aretes);
+
+            afficherAretesDimacs(nbSommets, nbAretes, aretes);
+
+        } else {
+            erreurFonctionnelle(2);
+        }
 
     } else
-        fprintf(stderr, "--------------------------\nNombre d'arguments insuffisants. \nERREUR : Minimum 5 et le nombre de paramètres doit être pair)\n--------------------------\n");
+        erreurFonctionnelle(1);
     
     return 0;
 }
