@@ -1,6 +1,7 @@
 # LogiqueExo8
 
-## Exercice réalisé dans le cadre d'un cours de Logique en 2nd Semestre à l'ENSIIE [<img src="https://www.ensiie.fr/wp-content/uploads/2018/04/ENSIIE01.png" alt="drawing" width="20"/>](https://www.ensiie.fr/) !
+## Exercice réalisé dans le cadre d'un cours de Logique en 2nd Semestre à l'ENSIIE !
+[<img src="https://www.ensiie.fr/wp-content/uploads/2018/04/ENSIIE01.png" alt="drawing" width="100"/>](https://www.ensiie.fr/)
 
 
 
